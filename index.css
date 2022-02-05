@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/nunito-sans-v11-latin-italic.woff2") format("woff2"),
+    url("../fonts/nunito-sans-v11-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/nunito-sans-v11-latin-regular.woff2") format("woff2"),
+    url("../fonts/nunito-sans-v11-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+.header {
+  height: 83px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #131313;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+.headerContainer {
+  width: 1438px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 92px;
+}
+li {
+  list-style: none;
+}
+.headerLiItem {
+  margin-left: 47px;
+}
+.headerLiItem a {
+  text-decoration: none;
+}
+.headerUl {
+  display: flex;
+  flex-flow: row, nowrap;
+}
+.headerLogo {
+  display: flex;
+  white-space: nowrap;
+}
+.headerButtonDiv {
+  display: flex;
+  align-items: center;
+  margin-right: 90px;
+}
+.button {
+  width: 161px;
+  height: 37px;
+  font-family: "Nunito Sans";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #e3b873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+}
+.button:hover {
+  cursor: pointer;
+  transition: 3s;
+  color: black;
+}
+.headerTel {
+  margin-right: 45px;
+  white-space: nowrap;
+  margin-left: 45px;
+}
+span {
+  color: #e3b873;
+}
+main {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+}
+.sectionOne {
+  display: flex;
+  background-image: url(../images/hall.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 707px;
+  position: relative;
+}
+.sectionOneContainer {
+  display: block;
+  width: 677px;
+  margin: 194px 630px 208px 134px;
+}
+.darkenedSectionOne {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 707px;
+  z-index: 1;
+}
+.title {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 53px;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.sectionOneText {
+  margin-top: 19px;
+  font-size: 22px;
+  line-height: 36px;
+}
+.button.sectionOneCalculateButton {
+  width: 207px;
+  height: 51px;
+  border-color: #e3b873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+}
+.button.sectionOneSubmitButton {
+  width: 207px;
+  height: 51px;
+  background: none;
+  border: 1px solid #ffffff;
+  margin-left: 20px;
+}
+.button.sectionOneSubmitButton:hover {
+  background-color: #e3b873;
+}
+.subtitle {
+  font-family: "Yeseva One";
+  font-size: 27px;
+  line-height: 37px;
+  letter-spacing: -0.07em;
+  color: #e3b873;
+  text-transform: uppercase;
+}
+.sectionTwo {
+  background-color: #131313;
+  height: 1074px;
+}
+.sectionTwoCompletedProjectsDiv {
+  display: grid;
+  height: 552px;
+  max-width: 1180px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-rows: 70px 100px 130px 70px 182px;
+  padding-top: 107px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: content-box;
+}
+.miniSub.title {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #e3b873;
+}
+.projectsInfo {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 27px;
+  grid-area: 3/1/4/3;
+}
+.imageDiv {
+  grid-area: 2/3/6/6;
+  width: 679px;
+  height: 482px;
+}
+.subtitle.h2 {
+  grid-area: 2/1;
+}
+.examplesSectionTwoDiv {
+  width: 623px;
+  display: flex;
+  justify-content: space-between;
+  grid-area: 1/3/2/6;
+}
+.extraSmall.title {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+  line-height: 19px;
+  white-space: nowrap;
+}
+.h4UnderLine {
+  grid-area: 1/3;
+  align-self: center;
+  margin-bottom: 15px;
+}
+.citySectionTwo {
+  grid-area: 4/1;
+}
+.repairTimeSectionTwo {
+  grid-area: 5/1;
+}
+.apartmentSectionTwo {
+  grid-area: 4/2;
+}
+.repairCostSectionTwo {
+  grid-area: 5/2;
+}
+.arrowsSectionTwo {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+  height: 13px;
+  grid-area: 5/1;
+  align-self: end;
+}
+.onlineControl {
+  display: flex;
+  flex-flow: column;
+  width: 196px;
+  /* margin-left: 595px; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.onlineControl.title {
+  font-size: 20px;
+  line-height: 28px;
+  text-shadow: none;
+  align-self: flex-end;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.cameraDiv {
+  display: flex;
+  align-self: center;
+}
+.videoDiv {
+  height: 434px;
+  width: 817px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -200px;
+}
+.playVideoButton {
+  background-color: #e3b873;
+  border: none;
+  border-radius: 50px;
+  height: 85px;
+  width: 85px;
+  box-shadow: 0px 5px 30px rgba(227, 184, 115, 0.2);
+  position: absolute;
+  right: 363px;
+  top: 175px;
+  z-index: 1;
+}
+.polygonForButton {
+  height: 28px;
+  width: 28px;
+  margin-top: 10px;
+}
+.playVideoButton:hover {
+  cursor: pointer;
+}
+.videoDiv::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+.sectionThree {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.horizontalLine {
+  width: 55px;
+  padding-top: 62px;
+}
+.infoAboutOnlineWorkProcess {
+  color: #363636;
+  font-size: 18px;
+  line-height: 37px;
+  text-align: center;
+  padding-top: 34px;
+}
+.formDiv * {
+  color: #131313;
+}
+.formDiv {
+  width: 769px;
+  height: 51px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 92px;
+}
+.formAndTitleDiv {
+  display: flex;
+  flex-flow: column;
+  height: 51px;
+}
+.formSubmit.button {
+  height: 51px;
+  width: 200px;
+  box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+  color: white;
+  border: none;
+}
+#nameFormId {
+  height: 33px;
+}
+#nameFormId::placeholder {
+  font-size: 14px;
+  line-height: 23px;
+  color: #363636;
+}
+#phoneFormId {
+  height: 33px;
+}
+#phoneFormId::placeholder {
+  font-size: 14px;
+  line-height: 23px;
+  color: #363636;
+}
+.formLaber {
+  font-size: 13px;
+  line-height: 21px;
+  color: rgba(54, 54, 54, 0.5);
+  transform: rotate(-0.07deg);
+}
