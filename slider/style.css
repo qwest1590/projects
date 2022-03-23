@@ -148,3 +148,12 @@ a {
 .activeSvg rect {
   fill-opacity: 1;
 }
+.centerPoint :hover {
+  filter: drop-shadow(0 0 1px white);
+}
+.rightPoint :hover {
+  filter: drop-shadow(0 0 1px white);
+}
+.leftPoint :hover {
+  filter: drop-shadow(0 0 1px white);
+}
