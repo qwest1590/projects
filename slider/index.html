@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Slider</title>
+  </head>
+  <body>
+    <section class="projects">
+      <div class="projects-div">
+        <h1 class="h1 title">
+          Completed <br />
+          Projects
+        </h1>
+        <img class="svg-line" src="./img/Rectangle 6.2.svg" />
+        <p class="promo-text">
+          Only a small part of the work performed by our company is presented<br />
+          on the site. For 14 years on in the construction<br />
+          market we have made happy more than 1000 families
+        </p>
+        <div class="info city">
+          <h2 class="h2 title">City:</h2>
+          <p class="city-text">
+            Rostov-on-Don <br />
+            LCD admiral
+          </p>
+        </div>
+        <div class="info apartment">
+          <h2 class="h2 title">Apartment area:</h2>
+          <p class="area-text">81 m2</p>
+        </div>
+        <div class="info reptime">
+          <h2 class="h2 title">Repair time:</h2>
+          <p class="time-text">3.5 months</p>
+        </div>
+        <div class="info repcost">
+          <h2 class="h2 title">Repair cost:</h2>
+          <p class="cost-text">Upon request</p>
+        </div>
+        <div class="svg-nav">
+          <img class="leftArrow" src="./img/arrowLeft.svg" />
+          <svg
+            class="leftPoint activeSvg"
+            width="11"
+            height="11"
+            viewBox="0 0 11 11"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="0.952759"
+              y="0.456177"
+              width="9.56667"
+              height="9.56667"
+              rx="4.78333"
+              fill="white"
+              fill-opacity="0.3"
+            />
+          </svg>
+
+          <svg
+            class="centerPoint"
+            width="11"
+            height="11"
+            viewBox="0 0 11 11"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="0.952759"
+              y="0.456177"
+              width="9.56667"
+              height="9.56667"
+              rx="4.78333"
+              fill="white"
+              fill-opacity="0.3"
+            />
+          </svg>
+
+          <svg
+            class="rightPoint"
+            width="11"
+            height="11"
+            viewBox="0 0 11 11"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="0.952759"
+              y="0.456177"
+              width="9.56667"
+              height="9.56667"
+              rx="4.78333"
+              fill="white"
+              fill-opacity="0.3"
+            />
+          </svg>
+
+          <img class="rightArrow" src="./img/arrowRight.svg" />
+        </div>
+        <div class="slider-links">
+          <a id="admiralLink" class="currentLink">Rostov-on-Don,admiral</a>
+          <a id="sochiLink">Sochi thieves</a>
+          <a id="patrioticLink">Rostov-on-Don patriotic</a>
+        </div>
+        <div class="dynamic-image-div">
+          <img id="admiralImg" src="./img/image1.png" />
+          <img id="sochiImg" src="./img/image2.png" />
+          <img id="patrioticImg" src="./img/image3.png" />
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

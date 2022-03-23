@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: local(""),
+    url("./fonts/nunito-sans-v11-latin-italic.woff2") format("woff2"),
+    url("./fonts/nunito-sans-v11-latin-italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("./fonts/nunito-sans-v11-latin-regular.woff2") format("woff2"),
+    url("./fonts/nunito-sans-v11-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("./fonts/YesevaOne-Regular.woff2") format("woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Nunito Sans";
+  font-size: 13px;
+  line-height: 27px;
+  color: white;
+}
+.projects {
+  background-color: #131313;
+  height: 783px;
+}
+.projects-div {
+  width: 1171px;
+  height: 552px;
+  padding: 107px 134px 123px 134px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 170px 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.8fr 1fr 1fr 1.2fr;
+  grid-template-areas:
+    "empty empty link link link"
+    "title svg image image image"
+    "promo promo image image image"
+    "city apartment image image image"
+    "reptime repcost image image image";
+}
+.title {
+  font-family: "Yeseva One";
+  color: #e3b873;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.h1.title {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  grid-area: title;
+}
+.h2.title {
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+}
+.info p {
+  padding-top: 9px;
+}
+.dynamic-image-div {
+  grid-area: image;
+  padding-left: 22px;
+  position: relative;
+}
+.dynamic-image-div :nth-child(2),
+.dynamic-image-div :nth-child(3) {
+  display: none;
+}
+.promo-text {
+  grid-area: promo;
+}
+.svg-line {
+  align-self: center;
+  padding-top: 10px;
+}
+.svg-nav {
+  grid-area: reptime;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: flex-end;
+  width: 205px;
+}
+.svg-nav svg,
+.svg-nav img {
+  cursor: pointer;
+}
+.slider-links {
+  grid-area: link;
+  padding-bottom: 38px;
+  padding-left: 22px;
+}
+a {
+  text-decoration: none;
+  line-height: 1.5rem;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: "Yeseva One";
+  text-transform: uppercase;
+  margin-right: 70px;
+  cursor: pointer;
+}
+.slider-links a:hover {
+  filter: drop-shadow(0px 0px 6px #ffd000);
+  color: #e3b873;
+  text-decoration-line: underline;
+  text-underline-offset: 7px;
+}
+.info.city {
+  grid-area: city;
+}
+.info.apartment {
+  grid-area: apartment;
+}
+.info.reptime {
+  grid-area: reptime;
+}
+.info.repcost {
+  grid-area: repcost;
+}
+.svg-line {
+  grid-area: svg;
+}
+#patrioticImg,
+#sochiImg {
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+#admiralImg {
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+.currentLink {
+  transition-duration: 2s;
+  color: #e3b873;
+}
+.activeSvg rect {
+  fill-opacity: 1;
+}
